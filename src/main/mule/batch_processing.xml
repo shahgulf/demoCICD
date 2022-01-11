@@ -10,6 +10,5 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	<flow name="batch_processingFlow" doc:id="4581510a-5ae8-4451-9cb3-8e4933a80c00" >
 		<http:listener doc:name="Listener" doc:id="83f4ca2d-ce4d-4f13-9e4e-a97d1c32041a" config-ref="HTTP_Listener_config" path="/test"/>
 		<set-payload value='#["hello CICD"]' doc:name="Set Payload" doc:id="847247f5-e00f-4dd2-b228-c7b82b24fd8e" />
-		<logger level="INFO" doc:name="Logger" doc:id="2f0b3325-89f2-4115-b4c3-f80d366858be" message="payload"/>
 	</flow>
 </mule>
